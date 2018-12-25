@@ -1,4 +1,4 @@
-FROM rocker/tidyverse:3.5.1
+FROM rocker/tidyverse:latest
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
@@ -16,5 +16,5 @@ RUN apt-get update \
   furrr \
   drake \
   here
-  
+
 WORKDIR /home/rstudio
